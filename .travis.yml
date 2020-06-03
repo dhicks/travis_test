@@ -19,8 +19,8 @@ cache: packages
 # - install covr if not already installed
 # - update all installed packages
 
-r_packages:
-  - lintr
+# r_packages:
+#  - lintr
 
 install:
   - mkdir -p ~/Rlib
@@ -29,6 +29,7 @@ install:
   - echo '.travis.yml' > .Rbuildignore
 #  - Rscript -e 'if(!"devtools" %in% rownames(installed.packages())) { install.packages("devtools", dependencies = TRUE) }'
 #  - Rscript -e 'if(!"covr" %in% rownames(installed.packages())) { install.packages("covr", dependencies = TRUE) }'
+  - Rscript -e 'if(!"lintr" %in% rownames(installed.packages())) { install.pacages("lintr", dependencies = TRUE) }'
   - Rscript -e 'update.packages(ask = FALSE, instlib = "~/Rlib")'
 
 
