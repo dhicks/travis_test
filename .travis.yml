@@ -18,9 +18,8 @@ cache: packages
 # - install covr if not already installed
 # - update all installed packages
 
-install:
-  r_packages:
-    - lintr
+# r_packages:
+#   - lintr
 
 # install:
 #  - mkdir -p ~/Rlib
