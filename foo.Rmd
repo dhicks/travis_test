@@ -3,4 +3,5 @@ Some text
 ```{r}
 foo <- 2 + 2
 bar <- 2 * foo
+baz <- bar + bar
 ```
