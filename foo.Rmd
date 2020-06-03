@@ -1,5 +1,5 @@
 Some text
 
 ```{r}
-foo <- 2 + 2
+foo = 2 + 2
 ```
