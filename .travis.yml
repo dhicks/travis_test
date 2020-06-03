@@ -10,11 +10,6 @@ language: r
 sudo: false
 cache: packages
 
-# cache local R libraries directory:
-cache:
-  directories:
-    - ~/Rlib
-
 # install the package and dependencies:
 # - create directory for R libraries (if not already exists)
 # - create .Renviron with location of R libraries
@@ -23,6 +18,9 @@ cache:
 # - install devtools if not already installed
 # - install covr if not already installed
 # - update all installed packages
+
+r_packages:
+  - lintr
 
 install:
   - mkdir -p ~/Rlib
