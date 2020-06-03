@@ -2,6 +2,6 @@ language: r
 cache: packages
 
 
-# Lint
+# Run tests
 script:
-  - ./travis-linter.sh
+  - Rscript -e "testthat::test_dir('tests')"
