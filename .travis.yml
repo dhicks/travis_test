@@ -7,7 +7,6 @@
 ## Trying 2016 update from RStudio: <https://blog.rstudio.com/2016/03/09/r-on-travis-ci/>
 
 language: r
-sudo: false
 cache: packages
 
 # install the package and dependencies:
@@ -19,8 +18,9 @@ cache: packages
 # - install covr if not already installed
 # - update all installed packages
 
-r_packages:
-  - lintr
+install:
+  r_packages:
+    - lintr
 
 # install:
 #  - mkdir -p ~/Rlib
